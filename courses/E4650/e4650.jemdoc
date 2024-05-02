@@ -1,0 +1,127 @@
+# jemdoc: menu{MENU_lower}{e6899.html}
+= E4650 Convex Optimization for Electrical Engineering\n
+Department of Electrical Engineering, Columbia University
+
+This is the Fall'20 course homepage for  EEOR E4650: Convex Optimization for Electrical Engineering.
+
+*Note:* The official name for the course is "Convex optimization for electrical engineering". However, the course is suitable for any student within SEAS (or beyond) provided you satisfy the math prerequisite. 
+
+== Basic information
+- *Format*: Online (may change to hybrid i.e., some in class teaching later in term)
+- *Lectures*: Tuesday \& Thursday, 10:10-11:25am. Streamed live via Zoom and recorded.
+- *Recitations*: Zoom, time tba
+- *Instructor*: James Anderson (james.anderson@columbia.edu)
+- *TA:* Han Wang (hw2786@columbia.edu)
+- *Office hours*: James: Wednesdays 1-2pm, Han: Fridays 2-4pm
+
+== Course announcements
+- *15 December:* Time slots for  the final have been posted - email the instructors  with your choice
+- *9 December:* HW 6 posted, due by 6pm December 27th
+- *26 November:* No class - happy thanksgiving!
+- *22 November:* HW 5 posted, due by 6pm December 8th
+- *4 November:* Don't forget to vote in  the poll to choose the next sequence of topics
+- *4 November:* HW3 graded: *mean:* 21.9 (out of a possible 29), *median:* 23, *std dev:* 5.16
+- *4 November:* Midterm exams graded: *mean:* 75.92 (\%), *median:* 80, *std dev:* 17.35
+- *26 October:* HW 4 posted, due by 6pm November 9th
+- *12 October:* Recitation with Han on October 19th at 2:40pm (Zoom link to follow)
+- *12 October:* No homework assigned this week
+- *5 October:*  Homework 3 posted, due by 6pm October 16th
+- *28 September:* No homework assigned this week
+- *27 September:* We will have our first recitation on Tuesday 29th September at 4pm
+- *21 September:* Homework 2 posted, due by 6pm October 2nd
+- *20 September:* JA's office hours for September 23rd cancelled
+- *18 September* HW's office hours this week rescheduled to September 24, 2-4pm
+- *13 September:* Homework 1 posted, due by 6pm  September 25th
+- *11 September:* Office hours posted
+- *11 August:* Looking for something to do before class starts? Click [software.pdf here]
+- *11 August:* E4650 is a math heavy class. We will not have time to go over the necessary background in class. Please read and make sure you are comfortable with the content (and level) of the linear algebra in  [https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf Ch.2 of  Laurent El Ghaoui's notes].
+- *5 August:* Welcome to E4650, Fall'20
+
+
+
+== Overview
+=== Course description
+
+You will learn to recognize and solve convex optimization problems that arise in applications spanning engineering, mathematics, and computer science. The course can be divided into four parts: theory; applications; algorithms; advanced topic. A tentative list of topics can be seen below in the schedule.  Application areas we will consider include signal processing, statistics and machine learning, finance, energy systems, and optimal control. The advanced topic will involve applying the theory of /linear matrix inequalities/ to a specific problem.
+
+
+
+
+=== Intended audience
+This course should benefit anyone who uses or will use scientific computing, data science, or optimization in engineering or related work (e.g., machine learning, finance). Within SEAS, people from the following departments and fields: Electrical Engineering (especially areas like signal processing, smart energy, communications, control); Applied Physics & Applied Math (numerical analysis, high performance computing),  Civil Engineering & Engineering Mechanics (structural analysis, optimization, design); Computer Science (especially machine learning, computer graphics, algorithms & complexity, computational geometry); Mechanical Engineering (robotics, control, fluid mechanics); Industrial Engineering & Operations Research. The course may be useful to students and researchers in several other fields as well: Mathematics, Statistics, Finance, Economics.
+
+
+
+=== Textbook
+This course closely follows /Convex Optimization/ by Boyd and Vandenberghe, freely available [https://web.stanford.edu/~boyd/cvxbook/ here].
+
+The following books are useful as additional reference texts.
+- Laurent El Ghaoui's [https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf lecture notes]
+- /Convex Optimization Theory/, D. Bertsekas (Athena Scientific)
+- /Lectures on Convex Optimization/, Y. Nesterov (Springer)
+
+== Schedule
+The tentative syllabus is set out below. Note that the current timetable is only a rough guide, and that there will be an in-class midterm which is  not shown. 
+
+Chapter numbers refer to the textbook /Convex Optimization/ by Boyd and Vandenberghe.
+
+~~~
+{}{table}{TABLENAME}
+*Week*  | Topic | Chapter | Additional notes | Homework (due) ||
+0 | Preparation: Software installation |  | [software.pdf software] |  ||
+1 | Introduction \& logistics \n Convex sets  | 1\n  2  | [logistics.pdf logistics]  |   [hw1.pdf homework 1] \n (September 25) ||
+2 | Convex functions        |  3  | [rec1.pdf recitation slides] | [hw2.pdf homework 2] \n (October 2) ||
+3 | Convex optimization problems         | 4  |  | [hw3.pdf homework 3] \n (October 16)||
+4 | Duality   | 5 |  | [hw4.pdf homework 4] \n (November 9)|| 
+5 | Applications: Approximation \& fitting | 6  |  | [hw5.pdf homework 5] \n (December 8)||
+6 | Applications: Statistical estimation | 7  |  | (see homework 5)||
+7 | Numerical linear algebra review \n Algorithms: Unconstrained optimization | Appendix C \n 9  |  | [hw6.pdf homework 6] \n (December 27) ||
+8 | Algorithms: Constrained optimization | 10  |  | ||
+9 | Algorithms: Interior point methods | 11  |  | ||
+10| tba | reading tba | |
+~~~
+
+
+\n
+We will aim to cover an  engineering example / advanced  topics in depth in the last weeks of class. 
+
+== Course organization
+
+=== Prerequisites
+Students should be  comfortable with basic linear algebra at the level of Chapter 2 of [https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf Laurent El Ghaoui's notes] as well as basic probability. 
+
+In addition, familiarity with basic programming will be necessary to complete some homework questions. One of  [http://cvxr.com/cvx/ CVX] (Matlab), [https://www.cvxpy.org CVXPY] (Python), [https://cvxr.rbind.io CVXR] (R), or [http://convexjl.readthedocs.org Convex.jl] (Julia) will be used to write simple scripts. No prior knowledge of CVX is assumed, a recitation on this topic will be provided. 
+
+Graduate students are required to use [https://www.latex-project.org/get/ LaTeX] to typeset their homework (undergraduates are encouraged to use LaTeX, but it is not a requirement). Templates  and examples are available on Courseworks. A recitation on using LaTeX will be given in week 1 or 2.
+
+=== Course requirements
+- Weekly homework assignments: Assigned (most) Tuesdays, and due the following Friday by 6pm. Solutions must be submitted in LaTeX, templates will be provided.
+- Recitations: Held weekly, attendance optional.  
+- Midterm exam: 60 minute in-class exam. Date TBD.
+- Final exam: The format is a 24-hour take home exam scheduled for the  last week of class.   
+
+=== Grading
+- Homework 35\%, Midterm exam 15\%, Final Exam 50\%.
+
+=== Homework
+Homework is assigned most weeks, and due the following Friday by 6pm. All homework must be  submitted via Courseworks. *Late homework is not accepted* However, you have 5 ``late days'' to use at your discretion. After these days have  been used up no late homework will be accepted. Each question will be graded on a scale of {0,1,2,3}.
+
+Graduate students must typeset homework using LaTeX. A template has been provided on Courseworks, but feel free to create your own. Undergraduate students are encouraged to use LaTeX but may also submit handwritten solutions. Everybody should read the [https://web.stanford.edu/class/ee364b/latex_templates/template_notes.pdf style guide] (written by Stephen Boyd for his EE364a class at Stanford) before submitting homework assignments. 
+
+You are allowed to work on homework in small groups, but the work you submit (including code) must be your own.
+
+
+
+~~~
+{}{raw}
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96124356-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+~~~

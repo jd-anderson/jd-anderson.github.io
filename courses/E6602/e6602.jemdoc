@@ -1,0 +1,114 @@
+# jemdoc: menu{MENU_lower}{e6602.html}
+= E6602 Modern Control Theory\n
+Department of Electrical Engineering, Columbia University
+
+This webpage provides an overview of the E6602 Modern Control Theory class. E6602 is typically taught
+once per year. The information below is meant to provide a snapshot of the course structure and the
+material covered.
+
+
+
+
+== Overview
+=== Course description
+
+
+In this course, you will learn to recognize, model, formulate and solve optimal control problems that arise in a diverse range of applications including; circuits, mechanics, robotics, finance, etc. The primary object of interest will be linear time-invariant dynamical systems. We will begin with a primer of convex optimization and least squares problems. We will then cover state space models, system analysis (stability, controllability, observability), feedback control via linear matrix inequalities (H-infinity and H2 optimal control). Finally we will more advanced topics such as system identification (learning a dynamic model from data), uncertain systems, and distributed control.
+
+Some sample classes and the schedule are shown below.
+
+~~~
+{}{table}{TABLENAME}
+*Week*  | Topic  Slides | Additional notes ||
+1 | Intro \& background | [E6602/background_ch_1_2.pdf  Vector space notes]   ||
+2 | [E6602/least_squares.pdf Least-squares]   |    ||
+3 | [E6602/linear_systems.pdf Linear systems] |           ||
+4 | [E6602/autonomous_stability.pdf Stability of autonomous systems]        |        ||
+5 | [E6602/optimization.pdf Convex optimization]           | [E6602/background_ch_8.pdf LQR derivations]   ||
+6 | [E6602/controllability.pdf Controllability \& state feedback ]       |  ||
+7 | Minimum-norm control |       ||
+8 | Observability and observeres    |   ||
+9 | BIBO stability|      ||
+10 | System performance \& KYP lemma|       ||
+11 | Small gain theorem |       ||
+12| H-infinity state feedback control |    ||
+13| H-infinity output feedback control |    ||
+14 | Uncertain systems    |
+~~~
+
+=== Intended audience
+
+This class is intended for students with an interest in the mathematical foundations of modern systems and control theory *and* those wishing to deploy optimal control algorithms to real applications. We particularly encourage students from non-engineering disciplines such as finance, biology, and physics.
+
+
+
+=== Textbook
+The course doesn't follow one specific book; all necessary material will be provided. However, we will draw heavily on material from:
+
+- *A course in robust control theory: a convex approach* \n Dullerud \& Paganini \n  Vol. 36. Springer Science & Business Media, 2013.
+- *LMIs in control systems*\n Duan \& Yu \n CRC press, 2013.
+
+An additional useful reference is
+- *Linear matrix inequalities in system and control theory* \n Boyd, El Ghaoui, Feron,\& Balakrishnan \n SIAM, 1994.
+
+== Sample course projects
+
+The projects below are a sample of past student projects:
+- [E6602/projects/anaesthesia_control.pdf Anaesthesia control],  Patrick Munar
+- [E6602/projects/double_pendulum_with_nn.pdf Control of a double inverted pendulum using a neural network], Ketian Wang
+- [E6602/projects/balanced_cube.pdf Self-balancing cube robot], Qixiao Zhang
+
+
+
+
+
+== Course organization
+
+=== Prerequisites
+- *Linear algebra:* APMA E3101 linear algebra or comfortable with the material [E6602/background_ch_1_2.pdf here].
+- *Signals and systems:* E3801 or equivalent.
+- *Optimization:* any optimization class (E4650 is *ideal but not necessary*, E6616 is being taught this semester).
+
+
+In addition, familiarity with basic programming will be necessary to complete some homework questions. One of  [http://cvxr.com/cvx/ CVX] (Matlab), [https://www.cvxpy.org CVXPY] (Python), [https://cvxr.rbind.io CVXR] (R), or [http://convexjl.readthedocs.org Convex.jl] (Julia) will be used to write simple scripts. No prior knowledge of CVX is assumed, a recitation on this topic will be provided.
+
+Students are required to use [https://www.latex-project.org/get/ LaTeX] to typeset their homework (undergraduates are encouraged to use LaTeX, but it is not a requirement). Templates  and examples will be provided.
+
+
+=== Grading
+- Homework 40\%
+- Midterm exam 20\%
+- Project 40\%
+
+=== Homework
+There will be approximately 6 homework exercises set. All homeworks are due ten days after they are released and must be  submitted via Gradescope. Homework submitted up to two days late will score a maximum of 50\%, anything later will not be graded. When computing your overall grade for homework, we will drop your lowest scoring submission.
+
+
+
+Apart from homework 1, students must typeset homework using LaTeX. A template will be provided. Students should read the [https://web.stanford.edu/class/ee364b/latex_templates/template_notes.pdf style guide] (written by Stephen Boyd for his EE364a class at Stanford) before submitting homework assignments.
+
+
+=== Midterm
+Closed-book midterm held during class time. Date tba.
+
+=== Project
+Students will develop their own system models, with the aim of simulating, analyzing, and designing feedback controllers. The project will consist of 3 components:
+- Proposal
+- Midterm progress report
+- Final report (conference style paper)
+
+Details will be provided in class.
+
+~~~
+{}{raw}
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96124356-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+~~~

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>E6602 Modern Control Theory </title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">James Anderson</div>
+<div class="menu-item"><a href="../index.html">home</a></div>
+<div class="menu-item"><a href="../group.html">group</a></div>
+<div class="menu-item"><a href="../publications.html">publications</a></div>
+<div class="menu-item"><a href="../software.html">software</a></div>
+<div class="menu-category">Teaching</div>
+<div class="menu-item"><a href=" e4650.html">EEOR&nbsp;E4650</a></div>
+<div class="menu-item"><a href=" e6899.html">EECS&nbsp;E6899</a></div>
+<div class="menu-item"><a href=" e6602.html" class="current">EEME&nbsp;E6602</a></div>
+<div class="menu-category">Misc</div>
+<div class="menu-item"><a href="../hikes.html">hiking</a></div>
+<div class="menu-item"><a href="../teaching.html">older&nbsp;courses</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>E6602 Modern Control Theory<br /></h1>
+<div id="subtitle">Department of Electrical Engineering, Columbia University</div>
+</div>
+<p>This webpage provides an overview of the E6602 Modern Control Theory class. E6602 is typically taught
+once per year. The information below is meant to provide a snapshot of the course structure and the
+material covered.</p>
+<h2>Overview</h2>
+<h3>Course description</h3>
+<p>In this course, you will learn to recognize, model, formulate and solve optimal control problems that arise in a diverse range of applications including; circuits, mechanics, robotics, finance, etc. The primary object of interest will be linear time-invariant dynamical systems. We will begin with a primer of convex optimization and least squares problems. We will then cover state space models, system analysis (stability, controllability, observability), feedback control via linear matrix inequalities (H-infinity and H2 optimal control). Finally we will more advanced topics such as system identification (learning a dynamic model from data), uncertain systems, and distributed control.</p>
+<p>Some sample classes and the schedule are shown below.</p>
+<table id="TABLENAME">
+<tr class="r1"><td class="c1"><b>Week</b>  </td><td class="c2"> Topic  Slides </td><td class="c3"> Additional notes </td></tr>
+<tr class="r2"><td class="c1">1 </td><td class="c2"> Intro & background </td><td class="c3"> <a href="E6602/background_ch_1_2.pdf">Vector space notes</a>   </td></tr>
+<tr class="r3"><td class="c1">2 </td><td class="c2"> <a href="E6602/least_squares.pdf">Least-squares</a>   </td><td class="c3">    </td></tr>
+<tr class="r4"><td class="c1">3 </td><td class="c2"> <a href="E6602/linear_systems.pdf">Linear systems</a> </td><td class="c3">           </td></tr>
+<tr class="r5"><td class="c1">4 </td><td class="c2"> <a href="E6602/autonomous_stability.pdf">Stability of autonomous systems</a>        </td><td class="c3">        </td></tr>
+<tr class="r6"><td class="c1">5 </td><td class="c2"> <a href="E6602/optimization.pdf">Convex optimization</a>           </td><td class="c3"> <a href="E6602/background_ch_8.pdf">LQR derivations</a>   </td></tr>
+<tr class="r7"><td class="c1">6 </td><td class="c2"> <a href="E6602/controllability.pdf">Controllability & state feedback</a>       </td><td class="c3">  </td></tr>
+<tr class="r8"><td class="c1">7 </td><td class="c2"> Minimum-norm control </td><td class="c3">       </td></tr>
+<tr class="r9"><td class="c1">8 </td><td class="c2"> Observability and observeres    </td><td class="c3">   </td></tr>
+<tr class="r10"><td class="c1">9 </td><td class="c2"> BIBO stability</td><td class="c3">      </td></tr>
+<tr class="r11"><td class="c1">10 </td><td class="c2"> System performance & KYP lemma</td><td class="c3">       </td></tr>
+<tr class="r12"><td class="c1">11 </td><td class="c2"> Small gain theorem </td><td class="c3">       </td></tr>
+<tr class="r13"><td class="c1">12</td><td class="c2"> H-infinity state feedback control </td><td class="c3">    </td></tr>
+<tr class="r14"><td class="c1">13</td><td class="c2"> H-infinity output feedback control </td><td class="c3">    </td></tr>
+<tr class="r15"><td class="c1">14 </td><td class="c2"> Uncertain systems    </td><td class="c3">
+</td></tr></table>
+<h3>Intended audience</h3>
+<p>This class is intended for students with an interest in the mathematical foundations of modern systems and control theory <b>and</b> those wishing to deploy optimal control algorithms to real applications. We particularly encourage students from non-engineering disciplines such as finance, biology, and physics.</p>
+<h3>Textbook</h3>
+<p>The course doesn't follow one specific book; all necessary material will be provided. However, we will draw heavily on material from:</p>
+<ul>
+<li><p><b>A course in robust control theory: a convex approach</b> <br /> Dullerud & Paganini <br />  Vol. 36. Springer Science &amp; Business Media, 2013.</p>
+</li>
+<li><p><b>LMIs in control systems</b><br /> Duan & Yu <br /> CRC press, 2013.</p>
+</li>
+</ul>
+<p>An additional useful reference is</p>
+<ul>
+<li><p><b>Linear matrix inequalities in system and control theory</b> <br /> Boyd, El Ghaoui, Feron,& Balakrishnan <br /> SIAM, 1994.</p>
+</li>
+</ul>
+<h2>Sample course projects</h2>
+<p>The projects below are a sample of past student projects:</p>
+<ul>
+<li><p><a href="E6602/projects/anaesthesia_control.pdf">Anaesthesia control</a>,  Patrick Munar</p>
+</li>
+<li><p><a href="E6602/projects/double_pendulum_with_nn.pdf">Control of a double inverted pendulum using a neural network</a>, Ketian Wang</p>
+</li>
+<li><p><a href="E6602/projects/balanced_cube.pdf">Self-balancing cube robot</a>, Qixiao Zhang</p>
+</li>
+</ul>
+<h2>Course organization</h2>
+<h3>Prerequisites</h3>
+<ul>
+<li><p><b>Linear algebra:</b> APMA E3101 linear algebra or comfortable with the material <a href="E6602/background_ch_1_2.pdf">here</a>.</p>
+</li>
+<li><p><b>Signals and systems:</b> E3801 or equivalent.</p>
+</li>
+<li><p><b>Optimization:</b> any optimization class (E4650 is <b>ideal but not necessary</b>, E6616 is being taught this semester).</p>
+</li>
+</ul>
+<p>In addition, familiarity with basic programming will be necessary to complete some homework questions. One of  <a href="http://cvxr.com/cvx/">CVX</a> (Matlab), <a href="https://www.cvxpy.org">CVXPY</a> (Python), <a href="https://cvxr.rbind.io">CVXR</a> (R), or <a href="http://convexjl.readthedocs.org">Convex.jl</a> (Julia) will be used to write simple scripts. No prior knowledge of CVX is assumed, a recitation on this topic will be provided.</p>
+<p>Students are required to use <a href="https://www.latex-project.org/get/">LaTeX</a> to typeset their homework (undergraduates are encouraged to use LaTeX, but it is not a requirement). Templates  and examples will be provided.</p>
+<h3>Grading</h3>
+<ul>
+<li><p>Homework 40%</p>
+</li>
+<li><p>Midterm exam 20%</p>
+</li>
+<li><p>Project 40%</p>
+</li>
+</ul>
+<h3>Homework</h3>
+<p>There will be approximately 6 homework exercises set. All homeworks are due ten days after they are released and must be  submitted via Gradescope. Homework submitted up to two days late will score a maximum of 50%, anything later will not be graded. When computing your overall grade for homework, we will drop your lowest scoring submission.</p>
+<p>Apart from homework 1, students must typeset homework using LaTeX. A template will be provided. Students should read the <a href="https://web.stanford.edu/class/ee364b/latex_templates/template_notes.pdf">style guide</a> (written by Stephen Boyd for his EE364a class at Stanford) before submitting homework assignments.</p>
+<h3>Midterm</h3>
+<p>Closed-book midterm held during class time. Date tba.</p>
+<h3>Project</h3>
+<p>Students will develop their own system models, with the aim of simulating, analyzing, and designing feedback controllers. The project will consist of 3 components:</p>
+<ul>
+<li><p>Proposal</p>
+</li>
+<li><p>Midterm progress report</p>
+</li>
+<li><p>Final report (conference style paper)</p>
+</li>
+</ul>
+<p>Details will be provided in class.</p>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96124356-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div id="footer">
+<div id="footer-text">
+Page generated 2023-10-25 17:53:51 EDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
